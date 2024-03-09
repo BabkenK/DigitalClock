@@ -21,7 +21,7 @@ MainWindow::~MainWindow()
 void MainWindow::myfunction()
 {
     QDateTime dateTime = QDateTime::currentDateTime();
-    QString time_text = dateTime.toString("hh : mm : ss - MM/dd/yyyy");
+    QString time_text = dateTime.toString("hh : mm : ss ap - MM/dd/yyyy");
 
     if((dateTime.time().second() % 2) == 0){
         time_text[3] = ' ';
